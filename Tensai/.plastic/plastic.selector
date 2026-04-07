@@ -1,0 +1,4 @@
+repository "Tensai/Tensai@6872752042357@cloud"
+  path "/"
+    br "/main"
+    co "/main"

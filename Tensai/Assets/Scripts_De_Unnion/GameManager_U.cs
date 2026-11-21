@@ -451,7 +451,7 @@ public class GameManager_U : MonoBehaviour
     {
         if (tile == null || peones == null || peones.Count == 0) return;
 
-        peones.Sort((a, b) => a.GetInstanceID().CompareTo(b.GetInstanceID()));
+        peones.Sort((a, b) => a.GetEntityId().CompareTo(b.GetEntityId()));
 
         Vector2[] pattern = ComputeOffsets(peones.Count, tileSeparationRadius);
         Vector3 center = tile.transform.position;
